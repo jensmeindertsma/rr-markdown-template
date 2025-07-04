@@ -1,0 +1,7 @@
+services:
+  app:
+    image: rr-markdown-template:latest
+    build:
+      context: .
+    ports:
+      - "1312:1312"

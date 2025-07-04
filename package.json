@@ -1,0 +1,46 @@
+{
+  "name": "@jensmeindertsma/rr-markdown-template",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.12.4",
+  "scripts": {
+    "build": "react-router build",
+    "clean": "rimraf build",
+    "dev": "react-router dev",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "lint:check": "eslint --cache --max-warnings 0 .",
+    "lint:fix": "eslint --cache --fix .",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc",
+    "typegen": "react-router typegen"
+  },
+  "dependencies": {
+    "@react-router/node": "^7.6.3",
+    "@react-router/serve": "^7.6.3",
+    "isbot": "^5.1.28",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.6.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@react-router/dev": "^7.6.3",
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^24",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "eslint": "^9.30.1",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.13",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.35.1",
+    "vite": "^7.0.2",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
